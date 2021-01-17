@@ -14,6 +14,7 @@ server.applyMiddleware({ app })
 const PORT = process.env.PORT ?? 3000
 
 app.get('/', (_, res) => res.json({ msg: 'Hello World' }))
+app.post('/', (_, res) => res.json({ msg: 'Hello World' }))
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
